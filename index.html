@@ -1,1 +1,85 @@
-Hello World!
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<body>
+
+    <!-- Navigation -->
+    <nav class="w3-bar w3-black">
+        <a href="#home" class="w3-button w3-bar-item">Home</a>
+        <a href="#about" class="w3-button w3-bar-item">About</a>
+        <a href="#resume" class="w3-button w3-bar-item">Resume</a>
+        <a href="#blog" class="w3-button w3-bar-item">Blog</a>
+        <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+    </nav>
+
+    <!-- Slide Show -->
+    <section>
+        <img class="mySlides" src="images/shoe_view.jpg"
+        style="width:100%">
+        <img class="mySlides" src="images/hk_boat.jpg"
+        style="width:100%">
+        <img class="mySlides" src="images/upandup.jpg"
+        style="width:100%">
+    </section>
+
+    <!-- Site Description -->
+    <section class="w3-container w3-center w3-content" style="max-width:600px">
+        <h2 class="w3-wide">Amy Tseng</h2>
+        <p class="w3-opacity"><i>Eyes up.</i></p>
+        <p class="w3-justify">Enter description here, dude.</p>
+    </section>
+
+    <!-- Band Members -->
+    <section class="w3-row-padding w3-center w3-light-grey">
+        <article class="w3-third">
+            <p>John</p>
+            <img src="images/big_buddha_close.jpg" alt="Random Name" style="width:100%">
+            <p>Travel</p>
+        </article>
+        <article class="w3-third">
+            <p>Paul</p>
+            <img src="images/big_buddha.jpg" alt="Random Name" style="width:100%">
+            <p>Paul is the prettiest.</p>
+        </article>
+        <article class="w3-third">
+            <p>Ringo</p>
+            <img src="images/big_buddha_close.jpg" alt="Random Name" style="width:100%">
+            <p>Ringo is the funniest.</p>
+        </article>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+        <a href="#"><i class="fa fa-facebook-official"></i></a>
+        <a href="#"><i class="fa fa-pinterest-p"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-flickr"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <p class="w3-medium">
+        Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+        </p>
+    </footer>
+  
+    <script>
+        // Automatic Slideshow - change image every 3 seconds
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel, 2500);
+        }
+    </script>
+
+</body>
+</html>
+
+
