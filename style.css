@@ -1,29 +1,35 @@
 
 body {
-    font-family: 'Poiret One', cursive !important;    
+    font-family: 'Economica', sans-serif !important;    
 }
-.name {
-    font-size: 78pt;
-    margin-left: 10%;
-    margin-top: 10%;
+
+.img-fluid {
+    margin-top: 20px;
+    max-width: 80%;
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
+}
+
+.intro-text {
+    font-size: 500%;
+    margin-top: -5%;
+    margin-left: 30%;
     animation: fadein 3s;
     -moz-animation: fadein 3s; /* Firefox */
     -webkit-animation: fadein 3s; /* Safari and Chrome */
     -o-animation: fadein 3s; /* Opera */
 
 }
-.menu-link{
-    font-size: 40pt;
+
+.intro-para {
+    font-size: 200%;
     margin-left: 30%;
     animation: fadein 3s;
     -moz-animation: fadein 3s; /* Firefox */
     -webkit-animation: fadein 3s; /* Safari and Chrome */
     -o-animation: fadein 3s; /* Opera */
-    -webkit-transition:all 0.5s ease-out;
-    -moz-transition:all 0.5s ease-out;
-    -ms-transition:all 0.5s ease-out;
-    -o-transition:all 0.5s ease-out;
-    transition:all 0.5s ease-out;
 
 }
 
@@ -33,13 +39,6 @@ body {
 }
 
   
-  .explore:hover, .create:hover, .play:hover {
-    -webkit-transform:scale(1.3);
-    -moz-transform:scale(1.3);
-    -ms-transform:scale(1.3);
-    -o-transform:scale(1.3);
-    transform:scale(1.3);
-  }
 
 
 @keyframes fadein {
