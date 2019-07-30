@@ -1,2 +1,2 @@
 # aetseng.github.io
-A site for MY LIFE
+A site for my projects.
